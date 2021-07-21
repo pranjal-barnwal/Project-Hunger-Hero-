@@ -1,0 +1,255 @@
+/* CSS Reset */
+*{
+    margin: 0px 0px;
+    padding: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation Bar: Logo & Image */
+#logo{
+    margin: 3px 6px;
+    padding: 0px 0px;
+    border: 4px double crimson;
+    border-radius: 15px;
+}
+#logo:hover{
+    background-color: white;
+    border-color: red;
+}
+#logo img{
+    height: 70px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 23px;
+    
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 4px 25px;
+}
+#navbar ul li a:hover{
+    border: 2px solid red;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+    height: 40%;
+}
+
+#home::before{
+    content: "";
+    /* background-color: black; */
+    background: url("bg/cooking.jpg") no-repeat center center/cover;
+    position: absolute;
+    padding: 39px;
+    height: 105%;
+    width: 93.8%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home p{
+    padding: 130px 200px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Services Section */
+#services{
+    margin-top: 23px;
+    margin-left: -20px;
+    display: flex;
+}
+#services .box{
+    border: 6px solid crimson;
+    border-radius: 15px;
+    padding: 20px 20px;
+    display: block;
+    margin: 15px;
+    background-color: rgb(255, 230, 116);
+
+}
+p.center{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+
+}
+.services-container{
+    padding: 15% 5%    ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 221, 133);
+    margin-top: 10%;
+}
+
+/* Clients Section */
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px 40px;
+
+}
+#client-section{
+    /* height: 200px; */
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("bg/main.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 64%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#clients img{
+    height: 90px;
+}
+.h-primary-contact{
+    color: black;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.h-primary-client{
+    padding: 5%;
+    color: black;
+    font-size: 45px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Contact section */
+#contact{
+    margin-top: 17%;
+    height: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("bg/contact.jpg") no-repeat center center/cover;
+}
+#contact-box form{
+    width: 40%;
+    padding-top: 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+    border-radius: 10px;
+    padding: 2px 12px;
+    border: 2px solid crimson;
+    width: 100%;
+    opacity: 0.7;
+}
+#message{
+    height: 150px;
+    width: 100%;
+}
+#contact-box textarea{
+    border: 2px solid crimson;
+    /* padding: 10px 20px; */
+    margin: 10px 20px ;
+    opacity: 0.7;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 30px 20px;
+}
+.h-secondary{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    padding: 30px 20px;
+}
+.btn{
+    padding: 5px 20px;
+    border: 4px solid white;
+    background-color: brown;
+    color: rgb(255, 192, 20);
+    border-radius: 20px;
+    margin: -30px 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+.btn:hover{
+    border-color: brown;
+    color: white;
+    background-color: rgb(255, 192, 20);
+}
+.btn:active{
+    background-color: rgb(248, 209, 125);
+}
+.center{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    opacity: 0.5;
+    margin-top: 28%;
+}
